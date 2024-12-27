@@ -1,0 +1,351 @@
+body {
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f9f9f9;
+    color: #4b3621;
+}
+
+.Contenedor {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Encabezado {
+    background-color: rgb(253, 241, 254);
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    font-family: cursive;
+    font-size: 36px;
+    color: #4b3621;
+}
+
+.registro1 {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.registro1 button {
+    background-color: rgb(50, 28, 10);
+    color: white;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-contenedor{
+    width: 100%;
+    background-color: rgb(239, 236, 229);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.menu a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.capa-transparente {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(37, 23, 9, 0.874);
+}
+
+.Contenido, .Foro {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+.titulo-blog, .Foro h2 {
+    text-align: center;
+    color: #4b3621;
+    margin-bottom: 20px;
+}
+
+.entrada p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #4b3621;
+}
+
+.imagen-ilustrativa img {
+    display: flex; 
+    max-width: 100%;
+    max-height: 400px; 
+    margin: 0 auto; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.botones .Editar,
+.botones .Eliminar {
+    background-color: rgb(50, 28, 10);
+    color: white;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botones .Editar:hover {
+    background-color: rgb(110, 69, 36);
+}
+
+.botones .Eliminar:hover {
+    background-color: rgba(200, 28, 10, 0.8);
+}
+
+.Comentarios {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.comentario {
+    text-align: left; 
+    margin-bottom: 15px; 
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 10px;
+}
+
+.comentario p {
+    font-weight: normal; 
+    margin: 5px 0; 
+    color: #333; 
+}
+
+.comentario small {
+    font-weight: normal; 
+    color: #555; 
+    display: block; 
+    margin-top: 5px; 
+}
+
+
+.Comentarios h2 {
+    font-size: 24px;
+    color: #4b3621;
+    margin-bottom: 20px;
+}
+
+.form-comentario label {
+    font-size: 16px;
+    color: #4b3621;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.form-comentario select, 
+.form-comentario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-comentario textarea {  
+    resize: none;
+}
+
+.btn-enviar {
+    background-color: rgb(50, 28, 10);
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.Pie {
+    background-color: rgb(253, 241, 254);
+    width: 100%;
+    padding: 50px 0px;
+    text-align: center;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.SubP {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logos img {
+    width: 40px;
+    height: 38px;
+    transition: transform 0.3s;
+}
+
+.logos img:hover {
+    transform: scale(1.1);
+}
+
+
+@media screen and (min-width: 681px) and (max-width: 1024px) {
+    .titulo {
+        font-size: 32px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .Contenido, .Foro {
+        padding: 25px;
+    }
+
+    .logos img {
+        width: 35px;
+        height: 33px;
+    }
+
+    .blog-card img {
+        height: 300px;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 680px) {
+    .Contenedor {
+        width: 100%;
+      }
+    
+      .titulo {
+        font-size: 28px; /* Texto más pequeño */
+        text-align: center;
+        margin-bottom: 15px;
+      }
+    
+      .registro1 {
+        position: static;
+        width: auto;
+        padding: 0 10px;
+        align-items: flex-end;
+        margin-left: 30px;
+        margin-bottom: 10px;
+      }
+    
+      .registro1 button {
+        width: auto;
+        min-width: 80px;
+        font-size: 12px; 
+        padding: 4px 8px;
+      }
+    
+      .menu-contenedor {
+        width: 100%;
+      }
+    
+      .menu {
+        flex-direction: column; 
+        gap: 5px;
+        padding: 5px 0;
+        align-items: center;
+        height: auto;
+      }
+    
+      .menu a {
+        font-size: 14px; 
+        padding: 6px 0;
+        width: 100%;
+        text-align: center;
+        line-height: 1.2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 28px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+    .menu a:last-child {
+        border-bottom: none; 
+    }
+    
+    .titulo-blog{
+        font-size: 20px;
+    }
+
+    .Contenido{
+        font-size: 13px;
+        padding: 20px;
+    }
+
+    .Foro{
+        font-size: 14px;
+        padding: 20px;
+    }
+
+    .Foro p{
+        font-size: 13px;
+    }
+    .logos img {
+        width: 25px;
+        height: 25px;
+    }
+    .nuevo-comentario textarea {
+        width: 100%;
+        padding: 3px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: none;
+    }
+    
+}

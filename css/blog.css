@@ -1,0 +1,448 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #4b3621;
+    background-color: #f9f9f9;
+}
+
+.Contenedor {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Encabezado {
+    background-color: rgb(253, 241, 254);
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    font-family: cursive;
+    font-size: 36px;
+    color: #4b3621;
+}
+
+.registro1 {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.registro1 button {
+    background-color: rgb(50, 28, 10);
+    color: white;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.agregar-blog{
+    background-color: rgb(47, 29, 13);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+    font-weight: 500;
+}
+
+.menu-contenedor{
+    width: 100%;
+    background-color: rgb(239, 236, 229);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.menu a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.blog-titulo {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 30px 0;
+    position: relative;
+}
+
+.blog-titulo h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 40px;
+    margin: 0;
+    color: #4b3621;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.search-bar input {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.blog-contenido {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.blog-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.card-fecha {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.card-autor {
+    position: absolute;
+    top: 20px;
+    left: 160px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;   
+}
+
+.card-contenido {
+    padding: 30px;
+}
+
+.card-contenido h2 {
+    font-size: 24px;
+    margin: 0 0 15px 0;
+    color: #4b3621;
+}
+
+.card-contenido p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;    
+    font-weight: lighter;
+}
+
+.card-contenido button{
+    background-color: rgb(50, 28, 10);
+    color: white;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: normal;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card-contenido button:hover{
+    background-color: rgba(50, 28, 10, 0.8);     
+}
+
+.Pie {
+    background-color: rgb(253, 241, 254);
+    width: 100%;
+    padding: 50px 0px;
+    text-align: center;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.SubP {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logos img {
+    width: 40px;
+    height: 38px;
+    transition: transform 0.3s;
+}
+
+.logos img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+@media screen and (min-width: 681px) and (max-width: 1024px) {
+    .titulo {
+        font-size: 32px;
+    }
+    
+    .menu {
+        gap: 20px;
+    }
+    
+    .blog-titulo h1 {
+        font-size: 32px;
+    }
+
+    .search-bar input {
+        width: 250px;
+    }
+
+    .blog-contenido {
+        padding: 15px;
+        gap: 30px;
+    }
+
+    .blog-card {
+        border-radius: 12px;
+    }
+
+    .blog-card img {
+        height: 300px;
+    }
+
+    .card-fecha, .card-autor {
+        font-size: 12px;
+        padding: 4px 12px;
+    }
+
+    .card-autor {
+        left: 140px;
+    }
+
+    .card-contenido {
+        padding: 20px;
+    }
+
+    .card-contenido h2 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .card-contenido p {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .card-contenido button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .logos img {
+        width: 35px;
+        height: 33px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 680px) {
+    .Contenedor {
+        width: 100%;
+    }
+
+    .titulo {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .registro1 {
+        position: static;
+        width: auto;
+        padding: 0 10px;
+        align-items: flex-end;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+
+    .registro1 button {
+        width: auto;
+        min-width: 80px;
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .menu-contenedor {
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px 0;
+        align-items: center;
+        height: auto;
+    }
+
+    .menu a {
+        font-size: 14px;
+        padding: 6px 0;
+        width: 100%;
+        text-align: center;
+        line-height: 1.2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 28px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .menu a:last-child {
+        border-bottom: none;
+    }
+
+    .blog-titulo {
+        margin: 20px 0;
+    }
+
+    .blog-titulo h1 {
+        font-size: 26px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .search-bar input {
+        width: 85%;
+        max-width: 280px;
+        font-size: 14px;
+    }
+
+    .search-bar button {
+        font-size: 18px;
+    }
+
+    .blog-contenido {
+      gap: 20px;
+    }
+
+    .blog-card {
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .blog-card img {
+        height: 200px;
+    }
+
+    .card-fecha, .card-autor {
+        font-size: 11px;
+        padding: 3px 10px;
+        top: 10px;
+    }
+
+    .card-fecha {
+        left: 10px;
+    }
+
+    .card-autor {
+        left: 120px;
+    }
+
+    .card-contenido {
+        padding: 15px;
+    }
+
+    .card-contenido h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .card-contenido p {
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 12px;
+    }
+
+    .card-contenido button {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+
+    .Pie {
+        padding: 30px 0;
+    }
+
+    .SubP {
+        font-size: 16px;
+    }
+
+    .logos {
+        gap: 10px;
+    }
+
+    .logos img {
+        width: 25px;
+        height: 25px;
+    }
+}
